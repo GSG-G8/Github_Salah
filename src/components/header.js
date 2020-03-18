@@ -20,12 +20,12 @@ class Header extends React.Component {
         {!data ? (
           <Loading />
         ) : (
-            <div className="heder">
-              <h1 className="heder__h1">{data.login}</h1>
-              <img src={data.avatar_url} alt="logo" />
-              <h3 className="heder__h3">{data.description}</h3>
-            </div>
-          )}
+          <div className="heder">
+            <h1 className="heder__h1">{data.login}</h1>
+            <img src={data.avatar_url} alt="logo" />
+            <h3 className="heder__h3">{data.description}</h3>
+          </div>
+        )}
       </div>
     );
   }
