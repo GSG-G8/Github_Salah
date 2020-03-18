@@ -23,10 +23,11 @@ class Members extends React.Component {
     const { mem } = this.state;
     const prof = 'https://github.com/';
     return (
-      <div>
+      <div className="container">
         {mem &&
           mem.map(user => (
             <div className="member">
+              <h1 className="member__h1">{user.login}</h1>
               <img
                 className="member__img"
                 src={user.avatar_url}
@@ -34,8 +35,6 @@ class Members extends React.Component {
                 key={user.login}
                 onClick={this.getUser}
               />
-
-              <h1 className="member__h1">{user.login}</h1>
               <a
                 className="member__a"
                 target="_blank "

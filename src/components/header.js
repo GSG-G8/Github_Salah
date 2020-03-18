@@ -22,7 +22,7 @@ class Header extends React.Component {
         ) : (
           <div className="heder">
             <h1 className="heder__h1">{data.login}</h1>
-            <img src={data.avatar_url} alt="logo" />
+            <img className="header__img" src={data.avatar_url} alt="logo" />
             <h3 className="heder__h3">{data.description}</h3>
           </div>
         )}
