@@ -5,11 +5,11 @@ const fire = ({ name, avatar_url, public_repos, followers }) => {
     title: `${name} !`,
     imageUrl: avatar_url,
     imageWidth: 300,
-    imageHeight: 200,
+    imageHeight: 300,
     html:
       `<h3>  ${public_repos} Repos</h3> ` +
       '<br>' +
-      `<div> <img src="https://img.icons8.com/ios/50/000000/facebook-like.png"/>
+      `<div> <img  src="https://img.icons8.com/ios/50/000000/facebook-like.png"/>
       <h3>    ${followers} Likes<h3/></div>`,
     showCloseButton: true,
     focusConfirm: false,
