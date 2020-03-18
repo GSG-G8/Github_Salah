@@ -15,6 +15,8 @@ module.exports = {
     jest: true
   },
   rules: {
+    "jsx-a11y/no-noninteractive-element-interactions":0,
+    "jsx-a11y/click-events-have-key-events":0,
     //  allow .js extensions for JSX.
     'react/jsx-filename-extension': [
       1,
