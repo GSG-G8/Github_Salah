@@ -63,7 +63,7 @@ body{
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-a;
+  justify-content: space-around;
 }
 .member{
   width:220px;
