@@ -1,6 +1,6 @@
 import React from 'react';
 import Loading from './loading';
-import getUserData from '../logic/fitch';
+import getUserData from '../logic/fetch';
 
 class Header extends React.Component {
   // eslint-disable-next-line react/state-in-constructor
@@ -10,7 +10,7 @@ class Header extends React.Component {
 
   componentDidMount() {
     const url = `https://api.github.com/orgs/GSG-G8`;
-    getUserData(url).then(result => this.setState({ data: result }));
+    getUserData(url).then(result => this.setState({ data: result.data }));
   }
 
   render() {

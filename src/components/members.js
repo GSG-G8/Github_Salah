@@ -1,5 +1,5 @@
 import React from 'react';
-import getUserData from '../logic/fitch';
+import getUserData from '../logic/fetch';
 import fire from './user';
 
 class Members extends React.Component {
@@ -10,13 +10,13 @@ class Members extends React.Component {
 
   componentDidMount() {
     const url = `https://api.github.com/orgs/GSG-G8/members`;
-    getUserData(url).then(result => this.setState({ mem: result }));
+    getUserData(url).then(result => this.setState({ mem: result.data }));
   }
 
   getUser = e => {
     const name = e.target.alt;
     const url = `https://api.github.com/users/${name}`;
-    getUserData(url).then(result => fire(result));
+    getUserData(url).then(result => fire(result.data));
   };
 
   render() {
