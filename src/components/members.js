@@ -26,13 +26,12 @@ class Members extends React.Component {
       <div className="container">
         {mem &&
           mem.map(user => (
-            <div className="member">
+            <div className="member" key={user.login}>
               <h1 className="member__h1">{user.login}</h1>
               <img
                 className="member__img"
                 src={user.avatar_url}
                 alt={user.login}
-                key={user.login}
                 onClick={this.getUser}
               />
               <a
