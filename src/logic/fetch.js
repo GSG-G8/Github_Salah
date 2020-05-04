@@ -6,11 +6,10 @@ const checkResponse = response => {
 };
 
 const getUserData = url => {
-  return fetch(`${url}?access_token=${process.env.accessToken}`)
+  console.log(`https://cors-github.herokuapp.com/github-api-req?link=${url}`);
+  return fetch(`https://cors-github.herokuapp.com/github-api-req?link=${url}`)
     .then(checkResponse)
-    .catch(err => {
-      throw new Error(`fetch getUserData failed ${err}`);
-    });
+    .catch(err => console.log('failed'));
 };
 
 export default getUserData;
