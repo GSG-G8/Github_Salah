@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/header';
 import Members from './components/members';
+import './App.css';
 
 class App extends React.Component {
   // eslint-disable-next-line react/state-in-constructor
