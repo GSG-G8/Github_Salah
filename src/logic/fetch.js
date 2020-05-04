@@ -6,7 +6,6 @@ const checkResponse = response => {
 };
 
 const getUserData = url => {
-  console.log(`https://cors-github.herokuapp.com/github-api-req?link=${url}`);
   return fetch(`https://cors-github.herokuapp.com/github-api-req?link=${url}`)
     .then(checkResponse)
     .catch(err => console.log('failed'));

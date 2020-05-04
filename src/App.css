@@ -34,7 +34,7 @@ body{
  background-color: #FAFAFA;
 }
 .heder{
-  height: 40vh;
+  height: auto;
   width: 70%;
   margin: 0 auto;
   text-align: center;
@@ -45,7 +45,7 @@ body{
 }
 .header__img{
   background-color: white;
-  width: 150px;
+  width: 100px;
   padding: 40px;
   border: 2px solid black;
   border-radius: 50%;
@@ -63,10 +63,10 @@ body{
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-a;
 }
 .member{
-  width:300px;
+  width:220px;
   border: 1px solid rgb(209, 202, 202);
   padding: 30px;
   margin: 10px;
@@ -75,7 +75,7 @@ body{
 
   }
 .member__img{
-  width: 250px;
+  width: 200px;
   border: 2px solid black;
   border-radius: 50%;
   margin: 20px;
