@@ -1,6 +1,7 @@
-*{
+* {
   margin: 0;
 }
+
 .App {
   text-align: center;
 }
@@ -30,10 +31,12 @@
 .App-link {
   color: #61dafb;
 }
-body{
- background-color: #FAFAFA;
+
+body {
+  background-color: #FAFAFA;
 }
-.heder{
+
+.heder {
   height: auto;
   width: 70%;
   margin: 0 auto;
@@ -43,7 +46,8 @@ body{
   border-top: none;
   background-color: white;
 }
-.header__img{
+
+.header__img {
   background-color: white;
   width: 100px;
   padding: 15px;
@@ -52,7 +56,7 @@ body{
   margin: 20px;
 }
 
-.container{
+.container {
   width: 70%;
   margin: 0 auto;
   text-align: center;
@@ -64,31 +68,34 @@ body{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  
 }
-.member{
-  width:150px;
+
+.member {
+  width: 150px;
   border: 1px solid rgb(209, 202, 202);
   padding: 30px;
   margin: 10px;
   border-radius: 2%;
-  box-shadow: 2px 2px rgb(209, 202, 202) ;
+  box-shadow: 2px 2px rgb(209, 202, 202);
+}
 
-  }
-.member__img{
+.member__img {
   width: 120px;
   border: 2px solid black;
   border-radius: 50%;
   margin: 20px;
-    }
-    .member__h1{
-font-size: 25px;    }
-    .member__a{
-      text-decoration: none;
-      color:gray;
-      font-size: 25px;
-      font-weight: bold;
-    }
+}
+
+.member__h1 {
+  font-size: 17px;
+}
+
+.member__a {
+  text-decoration: none;
+  color: gray;
+  font-size: 25px;
+  font-weight: bold;
+}
 
 @keyframes App-logo-spin {
   from {
